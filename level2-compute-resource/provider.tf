@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "terraform-remote-state-mk-1508"
-    key            = "remote/level1.tfstate"
+    key            = "remote/wordpress-compute-resource/level2.tfstate"
     region         = "ap-south-1"
     dynamodb_table = "terraform-remote-state"
   }
