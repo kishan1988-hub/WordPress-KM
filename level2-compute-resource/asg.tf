@@ -47,7 +47,7 @@ module "autoscaling" {
   name                      = "var.env_code"
   min_size                  = 2
   max_size                  = 5
-  desired_capacity          = 4
+  desired_capacity          = 2
   health_check_grace_period = 400
   health_check_type         = "EC2"
   vpc_zone_identifier       = data.terraform_remote_state.level1.outputs.private_subnet_id
